@@ -15,7 +15,6 @@ async function sendCurrentTabUrl() {
     const resp = await fetch(apiUrl);
 
     if (resp.ok) {
-        console.log('success')
         chrome.notifications.create({
             type: "basic",
             iconUrl: "icons/icon48.png",
@@ -23,7 +22,6 @@ async function sendCurrentTabUrl() {
             message: tab.url
         });
     } else {
-        console.log('error')
         chrome.notifications.create({
             type: "basic",
             iconUrl: "icons/icon48.png",
