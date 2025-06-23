@@ -17,14 +17,14 @@ async function sendCurrentTabUrl() {
     chrome.notifications.create({
       type: "basic",
       iconUrl: "icons/icon48.png",
-      title: "Помилка відправки",
+      title: "Error sending",
       message: `Status ${resp.status}`
     });
   } else {
     chrome.notifications.create({
       type: "basic",
       iconUrl: "icons/icon48.png",
-      title: "URL надіслано",
+      title: "URL sent",
       message: tab.url
     });
   }

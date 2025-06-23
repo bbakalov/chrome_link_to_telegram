@@ -2,7 +2,6 @@
 
 A Chrome extension that lets you quickly send the current tab’s URL to your Telegram bot using the Bot API.
 
-
 ## 🚀 Quick Installation
 - Clone or unzip the repository folder to a local directory.
 - Open Chrome and navigate to: **chrome://extensions/**
